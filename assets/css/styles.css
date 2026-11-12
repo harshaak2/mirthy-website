@@ -252,11 +252,11 @@ em{font-style:italic}
 .cake__name{display:block;padding:10px 8px 12px;font:500 1.25rem/1.2 var(--f-display);color:var(--blue-dd)}
 .cakes__ctrl,.cakes__live{display:none}
 .cakes__live{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-.cakes--3d .cakes__ctrl{display:flex;justify-content:center;gap:14px;margin-top:8px}
+.cakes--3d .cakes__ctrl{display:flex;justify-content:center;gap:14px;margin-top:20px;position:relative;z-index:2}
 .cakes--3d .cakes__live{display:block}
 .cakes__btn{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--blue);background:#fff;color:var(--blue-d);font-size:1.6rem;line-height:1;cursor:pointer}
 .cakes__btn:hover{background:var(--soft)}
-.cakes--3d .cakes__stage{perspective:1400px;height:clamp(340px,52vw,430px);position:relative;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+.cakes--3d .cakes__stage{perspective:1400px;height:calc(var(--ch,380px) + 56px);margin-top:36px;position:relative;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
 .cakes--3d .cakes__stage.is-drag{cursor:grabbing}
 .cakes--3d .cakes__ring{position:absolute;inset:0;margin:auto;display:block;width:var(--cw);height:var(--ch);padding:0;overflow:visible;transform-style:preserve-3d;transition:transform .7s var(--ease)}
 .cakes--3d .cakes__stage.is-drag .cakes__ring{transition:none}

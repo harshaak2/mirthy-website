@@ -47,8 +47,7 @@
   var turntable = false, angle = 0, th = 360 / N, front = 0, moved = false, userMoved = false, auto = null, visible = true, hovering = false, focusing = false, keyboard = false;
 
   function layout() {
-    var card = cakes[0].querySelector(".cake__card");
-    var w = Math.min(card.offsetWidth || 240, 280);
+    var w = Math.max(180, Math.min(260, stage.clientWidth * 0.58)); // card width: fixed by us, not measured from the card itself
     var r = (w / 2) / Math.tan(Math.PI / N) + 36;
     var h = w * 1.25 + 52;
     section.style.setProperty("--cw", w + "px"); section.style.setProperty("--ch", h + "px");
