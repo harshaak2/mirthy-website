@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mirthy Patisserie Café | Layered with Joy</title>
+  <meta name="description" content="Mirthy Patisserie Café: handcrafted cakes, pastries and coffee, baked fresh and layered with joy. Meet our signature dishes and the story behind the café.">
+  <meta name="theme-color" content="#4C7390">
+  <meta name="robots" content="noindex, nofollow"><!-- TEMPORARY review copy: restore "index, follow, max-image-preview:large" at launch -->
+  <!-- TODO (when the domain is final): add <link rel="canonical">, og:url and an absolute og:image URL, plus a sitemap.xml -->
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mirthy Patisserie Café">
+  <meta property="og:title" content="Mirthy Patisserie Café | Layered with Joy">
+  <meta property="og:description" content="Handcrafted cakes, pastries and coffee, baked fresh and layered with joy.">
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Fonts and the first slide are the only things on the critical path -->
+  <link rel="preload" href="assets/fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/dishes/layer-cake.svg" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/cakes.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Mirthy Patisserie Café",
+    "slogan": "Layered with joy",
+    "description": "A patisserie café serving handcrafted cakes, pastries and coffee, baked fresh daily.",
+    "servesCuisine": ["Patisserie", "Bakery", "Coffee"],
+    "logo": "assets/img/icon-512.png",
+    "image": "assets/img/og-image.jpg"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#about">Skip to our story</a>
+
+  <header class="nav" id="top">
+    <div class="wrap nav__in">
+      <a class="brand" href="#home" aria-label="Mirthy Patisserie Café, home">
+        <span class="brand__mark"><img src="assets/img/mark-white.webp" alt="" width="20" height="22"></span>
+        <span class="brand__txt"><b>Mirthy</b><small>Patisserie Café</small></span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav__links">
+          <li><a href="#home" class="is-current" data-link="home">Home</a></li>
+          <li><a href="#cakes" data-link="cakes">Cakes</a></li>
+          <li><a href="#about" data-link="about">Our story</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <!-- Animated curvy gradients in the brand blue (decorative) -->
+      <svg class="hero__flow" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="g-band1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4C7390" stop-opacity="0"/><stop offset=".55" stop-color="#4C7390" stop-opacity=".38"/><stop offset="1" stop-color="#3A6080" stop-opacity=".82"/></linearGradient>
+          <linearGradient id="g-band2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3A6080" stop-opacity=".05"/><stop offset=".5" stop-color="#4C7390" stop-opacity=".55"/><stop offset="1" stop-color="#7FA3BE" stop-opacity=".3"/></linearGradient>
+          <radialGradient id="g-rib" cx="0" cy="0" r="1"><stop offset="0" stop-color="#4C7390" stop-opacity=".55"/><stop offset="1" stop-color="#4C7390" stop-opacity="0"/></radialGradient>
+          <radialGradient id="g-blob" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#4C7390" stop-opacity=".5"/><stop offset=".6" stop-color="#6F95B0" stop-opacity=".22"/><stop offset="1" stop-color="#6F95B0" stop-opacity="0"/></radialGradient>
+          <linearGradient id="g-line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4C7390" stop-opacity="0"/><stop offset=".5" stop-color="#4C7390" stop-opacity=".55"/><stop offset="1" stop-color="#4C7390" stop-opacity="0"/></linearGradient>
+        </defs>
+        <g class="fl fl--a"><path fill="url(#g-blob)" d="M1090 120 C1290 100 1430 270 1420 450 C1410 650 1250 790 1070 770 C870 750 740 600 760 430 C780 260 910 140 1090 120Z"><animate attributeName="d" dur="16s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" values="M1090 120 C1290 100 1430 270 1420 450 C1410 650 1250 790 1070 770 C870 750 740 600 760 430 C780 260 910 140 1090 120Z;M1120 150 C1320 140 1450 300 1400 490 C1350 690 1230 760 1040 740 C860 720 720 570 780 400 C840 240 940 160 1120 150Z;M1090 120 C1290 100 1430 270 1420 450 C1410 650 1250 790 1070 770 C870 750 740 600 760 430 C780 260 910 140 1090 120Z"/></path></g>
+        <g class="fl fl--b"><path fill="url(#g-rib)" d="M-40 -20 H760 C700 110 560 150 430 210 C300 270 150 330 -40 300 Z"><animate attributeName="d" dur="13s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" values="M-40 -20 H760 C700 110 560 150 430 210 C300 270 150 330 -40 300 Z;M-40 -20 H840 C700 90 610 200 450 250 C300 300 130 270 -40 350 Z;M-40 -20 H760 C700 110 560 150 430 210 C300 270 150 330 -40 300 Z"/></path></g>
+        <g class="fl fl--c"><path transform="translate(0 40)" fill="url(#g-band1)" d="M-40 600 C200 520 380 720 700 650 S1180 520 1480 620 V940 H-40Z"><animate attributeName="d" dur="15s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" values="M-40 600 C200 520 380 720 700 650 S1180 520 1480 620 V940 H-40Z;M-40 650 C220 700 420 560 720 640 S1160 740 1480 590 V940 H-40Z;M-40 600 C200 520 380 720 700 650 S1180 520 1480 620 V940 H-40Z"/></path></g>
+        <g class="fl fl--d"><path transform="translate(0 40)" fill="url(#g-band2)" d="M-40 700 C260 790 520 610 820 710 S1240 800 1480 690 V940 H-40Z"><animate attributeName="d" dur="11s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" values="M-40 700 C260 790 520 610 820 710 S1240 800 1480 690 V940 H-40Z;M-40 690 C240 640 540 780 840 700 S1260 620 1480 730 V940 H-40Z;M-40 700 C260 790 520 610 820 710 S1240 800 1480 690 V940 H-40Z"/></path></g>
+        <g class="fl fl--e" fill="none" stroke="url(#g-line)" stroke-width="1.5">
+          <path d="M-20 560 C260 470 480 660 760 590 S1220 470 1460 560"/>
+          <path d="M-20 610 C280 540 500 720 800 640 S1240 540 1460 610" stroke-opacity=".6"/>
+          <path d="M860 70 C1040 150 1200 10 1460 110" stroke-opacity=".7"/>
+        </g>
+      </svg>
+      <div class="hero__grid" aria-hidden="true">
+        <span style="--x:3;--y:2"></span><span style="--x:7;--y:5"></span><span style="--x:1;--y:6"></span><span style="--x:10;--y:3"></span><span style="--x:5;--y:9"></span>
+      </div>
+
+      <!-- Curved edge that flows into the next section -->
+      <svg class="hero__edge" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path fill="#fff" d="M0 50 C240 10 480 80 760 40 S1200 0 1440 40 V80 H0Z"><animate attributeName="d" dur="12s" repeatCount="indefinite" calcMode="spline" keyTimes="0;.5;1" keySplines=".45 0 .55 1;.45 0 .55 1" values="M0 50 C240 10 480 80 760 40 S1200 0 1440 40 V80 H0Z;M0 36 C260 76 500 8 780 48 S1200 78 1440 30 V80 H0Z;M0 50 C240 10 480 80 760 40 S1200 0 1440 40 V80 H0Z"/></path>
+      </svg>
+
+      <div class="wrap hero__in">
+        <div class="hero__text">
+          <p class="eyebrow" style="--i:0"><i></i>Mirthy Patisserie Café<i></i></p>
+          <h1 id="hero-title" style="--i:1">Experience the <em>Mirth</em> at Mirthy</h1>
+          <p class="lede" style="--i:2">Handcrafted cakes, pastries and coffee, baked fresh and layered with joy. Come in for one slice; stay for the second.</p>
+          <div class="cta" style="--i:3">
+            <a class="btn" href="#about">Our story <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M4 10h11m0 0-4.5-4.5M15 10l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+          <ul class="notes" style="--i:4" aria-label="What we stand for">
+            <li>Baked fresh daily</li><li>Small batches</li><li>Made with Love</li>
+          </ul>
+        </div>
+
+        <!-- Signature dishes. TODO: replace the placeholder SVGs with real photos (WebP/AVIF, 4:5, ~1000x1250) and update the names below. -->
+        <div class="hero__visual" role="group" aria-roledescription="carousel" aria-label="Our signature dishes" id="carousel">
+          <div class="arch-wrap">
+            <div class="arch">
+              <figure class="slide is-active" data-name="Signature Layer Cake" data-note="Cream, sponge and patience, stacked high.">
+                <img src="assets/img/dishes/layer-cake.svg" alt="Signature layer cake with berries" width="800" height="1000" fetchpriority="high" decoding="async">
+              </figure>
+              <figure class="slide" data-name="Seasonal Fruit Tart" data-note="Crisp shell, silky custard, fresh fruit.">
+                <img src="assets/img/dishes/fruit-tart.svg" alt="Fruit tart topped with fresh berries" width="800" height="1000" loading="lazy" decoding="async">
+              </figure>
+              <figure class="slide" data-name="Chocolate Éclair" data-note="Choux filled to order, glazed in dark chocolate.">
+                <img src="assets/img/dishes/eclair.svg" alt="Chocolate glazed éclair" width="800" height="1000" loading="lazy" decoding="async">
+              </figure>
+              <figure class="slide" data-name="French Macarons" data-note="Delicate shells, a different flavour each day.">
+                <img src="assets/img/dishes/macarons.svg" alt="Stack of pastel macarons" width="800" height="1000" loading="lazy" decoding="async">
+              </figure>
+              <figure class="slide" data-name="Classic Tiramisu" data-note="Espresso-soaked and mascarpone-soft.">
+                <img src="assets/img/dishes/tiramisu.svg" alt="Slice of classic tiramisu dusted with cocoa" width="800" height="1000" loading="lazy" decoding="async">
+              </figure>
+            </div>
+          </div>
+
+          <div class="caption">
+            <div class="caption__txt" aria-live="polite" aria-atomic="true">
+              <span class="caption__no"><b id="cap-no">01</b> / 05 &middot; Signature</span>
+              <strong id="cap-name">Signature Layer Cake</strong>
+              <span id="cap-note">Cream, sponge and patience, stacked high.</span>
+            </div>
+            <div class="ctrl">
+              <ul class="dots" aria-label="Choose a dish"></ul>
+              <button class="pause" type="button" aria-label="Pause slideshow" aria-pressed="false"><svg class="i-pause" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M5 3v10M11 3v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg class="i-play" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M5 3.2v9.6L13 8z" fill="currentColor"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll" href="#about" aria-label="Scroll to our story"><span></span></a>
+    </section>
+
+    <!-- ============ CAKES ============ -->
+    <!-- TODO: replace the placeholder illustrations in assets/img/cakes with real WebP photos (4:5, ~1000x1250, under 120 KB), confirm the cake list and copy, and set the contact details at the top of assets/js/cakes.js -->
+    <section class="cakes" id="cakes" aria-labelledby="cakes-title">
+      <div class="wrap">
+        <p class="eyebrow">Made to order</p>
+        <h2 id="cakes-title">Our <em>cakes</em></h2>
+        <p class="cakes__lead">Turn the ring, pick a favourite and tell us what you need. We bake every cake to order.</p>
+        <div class="cakes__stage" role="group" aria-roledescription="carousel" aria-label="Our cakes" tabindex="0">
+          <ul class="cakes__ring">
+          <li class="cake" data-cake="chocolate-truffle" data-serves="8–10" data-sizes="1 kg, 2 kg" data-flavours="Dark chocolate, ganache" data-lead="48 hours" data-custom="Name or message, photo print">
+            <button class="cake__card" type="button" aria-haspopup="dialog">
+              <img src="assets/img/cakes/chocolate-truffle.svg" width="800" height="1000" alt="Illustration of a chocolate truffle cake" loading="lazy" decoding="async">
+              <span class="cake__name">Chocolate Truffle</span>
+            </button>
+            <template class="cake__more"><p>Rich dark chocolate sponge layered with silky ganache.</p></template>
+          </li>
+          <li class="cake" data-cake="red-velvet" data-serves="8–10" data-sizes="1 kg, 2 kg" data-flavours="Cream cheese, vanilla" data-lead="48 hours" data-custom="Name or message">
+            <button class="cake__card" type="button" aria-haspopup="dialog">
+              <img src="assets/img/cakes/red-velvet.svg" width="800" height="1000" alt="Illustration of a red velvet cake" loading="lazy" decoding="async">
+              <span class="cake__name">Red Velvet</span>
+            </button>
+            <template class="cake__more"><p>Velvety red sponge with tangy cream cheese frosting.</p></template>
+          </li>
+          <li class="cake" data-cake="butterscotch" data-serves="8–10" data-sizes="1 kg, 2 kg" data-flavours="Butterscotch, caramel" data-lead="24 hours" data-custom="Name or message, photo print">
+            <button class="cake__card" type="button" aria-haspopup="dialog">
+              <img src="assets/img/cakes/butterscotch.svg" width="800" height="1000" alt="Illustration of a butterscotch cake" loading="lazy" decoding="async">
+              <span class="cake__name">Butterscotch</span>
+            </button>
+            <template class="cake__more"><p>Buttery sponge with caramel crunch and butterscotch cream.</p></template>
+          </li>
+          <li class="cake" data-cake="blueberry-cheesecake" data-serves="6–8" data-sizes="1 kg" data-flavours="Blueberry, cream cheese" data-lead="72 hours" data-custom="Message on a board">
+            <button class="cake__card" type="button" aria-haspopup="dialog">
+              <img src="assets/img/cakes/blueberry-cheesecake.svg" width="800" height="1000" alt="Illustration of a blueberry cheesecake cake" loading="lazy" decoding="async">
+              <span class="cake__name">Blueberry Cheesecake</span>
+            </button>
+            <template class="cake__more"><p>Baked cheesecake on a biscuit base under a blueberry compote.</p></template>
+          </li>
+          <li class="cake" data-cake="pineapple-fresh-cream" data-serves="8–10" data-sizes="1 kg, 2 kg" data-flavours="Pineapple, fresh cream" data-lead="24 hours" data-custom="Name or message">
+            <button class="cake__card" type="button" aria-haspopup="dialog">
+              <img src="assets/img/cakes/pineapple-fresh-cream.svg" width="800" height="1000" alt="Illustration of a pineapple fresh cream cake" loading="lazy" decoding="async">
+              <span class="cake__name">Pineapple Fresh Cream</span>
+            </button>
+            <template class="cake__more"><p>Light sponge, whipped fresh cream and juicy pineapple.</p></template>
+          </li>
+          <li class="cake" data-cake="fresh-fruit-gateau" data-serves="8–10" data-sizes="1 kg, 2 kg" data-flavours="Vanilla, seasonal fruit" data-lead="48 hours" data-custom="Name or message, custom toppers">
+            <button class="cake__card" type="button" aria-haspopup="dialog">
+              <img src="assets/img/cakes/fresh-fruit-gateau.svg" width="800" height="1000" alt="Illustration of a fresh fruit gateau cake" loading="lazy" decoding="async">
+              <span class="cake__name">Fresh Fruit Gateau</span>
+            </button>
+            <template class="cake__more"><p>Vanilla sponge layered with cream and seasonal fruit.</p></template>
+          </li>
+          </ul>
+        </div>
+        <div class="cakes__ctrl"><button type="button" class="cakes__btn" data-dir="-1" aria-label="Previous cake">&#8249;</button><button type="button" class="cakes__btn" data-dir="1" aria-label="Next cake">&#8250;</button></div>
+        <p class="cakes__live" aria-live="polite" role="status"></p>
+        <p class="cakes__note">Contact us for pricing and custom designs.</p>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="wrap about__in">
+        <div class="about__media" data-reveal>
+          <!-- TODO: replace both portraits with the founders' photos (4:5) and fill in their names -->
+          <div class="duo">
+            <figure class="founder">
+              <div class="arch-wrap arch-wrap--sm"><div class="arch"><img src="assets/img/founder-1.svg" alt="Portrait of the first founder of Mirthy Patisserie Café" width="640" height="800" loading="lazy" decoding="async"></div></div>
+              <figcaption><b>Founder One</b><small>Co-founder</small></figcaption>
+            </figure>
+            <figure class="founder founder--low">
+              <div class="arch-wrap arch-wrap--sm"><div class="arch"><img src="assets/img/founder-2.svg" alt="Portrait of the second founder of Mirthy Patisserie Café" width="640" height="800" loading="lazy" decoding="async"></div></div>
+              <figcaption><b>Founder Two</b><small>Co-founder</small></figcaption>
+            </figure>
+          </div>
+          <div class="badge" aria-hidden="true"><img src="assets/img/mark-white.webp" alt="" width="22" height="24"><span>Layered<br>with joy</span></div>
+        </div>
+
+        <div class="about__body">
+          <p class="eyebrow eyebrow--left" data-reveal><i></i>Our story</p>
+          <h2 id="about-title" data-reveal>A café built on small joys, <em>one layer at a time.</em></h2>
+
+          <!-- TODO: replace this draft with the founders' real story, names and roles -->
+          <p data-reveal>Mirthy was started by two founders who share one simple belief: a good pastry can turn an ordinary hour into something worth remembering. Together they set out to build a place that feels warm and unhurried, where the cake is made with care and nobody is rushed to finish it.</p>
+          <p data-reveal>The name says it all. <em>Mirth</em> means joy, and every layer, whether cream, sponge, flavour or conversation, is there to add a little more of it. We keep our batches small, our recipes honest and our doors open to everyone, because the best part of any dessert is who you share it with.</p>
+
+          <blockquote class="quote" data-reveal>
+            <p>Every layer is a little more joy.</p>
+            <footer>
+              <img src="assets/img/mark-blue.webp" alt="" width="20" height="22">
+              <span><b>Founder One &amp; Founder Two</b><small>Founders, Mirthy Patisserie Café</small></span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <ul class="values">
+          <li data-reveal style="--d:0"><span>01</span><h3>Baked fresh</h3><p>Everything is made in small batches each morning, so what reaches your table is at its best.</p></li>
+          <li data-reveal style="--d:1"><span>02</span><h3>Layer by layer</h3><p>Patience is our main ingredient. Good flavour takes time, and we never skip the steps.</p></li>
+          <li data-reveal style="--d:2"><span>03</span><h3>Joy, shared</h3><p>Our café is a place for catching up, celebrating and sharing a table with the people you love.</p></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <img src="assets/img/logo-badge-white.webp" alt="Mirthy Patisserie Café. Layered with joy." width="96" height="143" loading="lazy" decoding="async">
+      <div class="foot__txt">
+        <p class="foot__tag">Layered with joy.</p>
+        <p class="foot__sm">&copy; 2026 Mirthy Patisserie Café. All rights reserved.</p>
+      </div>
+      <a class="foot__up" href="#home">Back to top <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M10 16V5m0 0L5.5 9.5M10 5l4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </footer>
+
+  <dialog id="cake-modal" class="cmodal" aria-labelledby="cake-modal-title">
+    <div class="cmodal__in">
+      <button type="button" class="cmodal__x" data-close aria-label="Close">&times;</button>
+      <img class="cmodal__img" src="" alt="" width="800" height="1000">
+      <div class="cmodal__body">
+        <h3 id="cake-modal-title"></h3>
+        <div class="cmodal__desc"></div>
+        <dl class="cmodal__facts"></dl>
+        <p class="cmodal__price">Contact us for pricing.</p>
+        <div class="cmodal__cta"><a class="cmodal__wa" data-wa href="#" target="_blank" rel="noopener">Enquire on WhatsApp</a><a class="cmodal__alt" data-call href="#">Call</a><a class="cmodal__alt" data-mail href="#">Email</a></div>
+        <div class="cmodal__nav"><button type="button" data-prev>&#8249; Previous</button><button type="button" data-next>Next &#8250;</button></div>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
