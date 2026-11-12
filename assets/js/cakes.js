@@ -1,8 +1,8 @@
 // Cakes turntable + enquiry modal. No dependencies. Without JS (or with reduced motion / fewer than 5 cakes) the section stays a scroll-snap row.
 (function () {
   "use strict";
-  // TODO (placeholders until the cafe confirms): WhatsApp number in international format without "+", phone and email.
-  var CONTACT = { whatsapp: "910000000000", phone: "+910000000000", email: "hello@mirthy.in" };
+  // TODO (placeholder until the cafe confirms): WhatsApp number in international format without "+".
+  var CONTACT = { whatsapp: "910000000000" };
 
   var section = document.getElementById("cakes");
   var stage = section && section.querySelector(".cakes__stage");
@@ -22,13 +22,11 @@
     el(".cmodal__img").src = img.currentSrc || img.src; el(".cmodal__img").alt = img.alt;
     el("#cake-modal-title").textContent = name;
     var more = c.querySelector(".cake__more"); el(".cmodal__desc").innerHTML = more ? more.innerHTML : "";
-    var facts = [["Serves", d.serves], ["Sizes", d.sizes], ["Flavours", d.flavours], ["Lead time", d.lead], ["Customisation", d.custom]];
+    var facts = [["Serves", d.serves], ["Flavours", d.flavours]];
     el(".cmodal__facts").innerHTML = facts.filter(function (f) { return f[1]; }).map(function (f) { return "<dt>" + f[0] + "</dt><dd></dd>"; }).join("");
     var dds = el(".cmodal__facts").querySelectorAll("dd"); facts.filter(function (f) { return f[1]; }).forEach(function (f, k) { dds[k].textContent = f[1]; });
     var msg = "Hi Mirthy, I'd like to know more about the " + name;
     el("[data-wa]").href = "https://wa.me/" + CONTACT.whatsapp + "?text=" + encodeURIComponent(msg);
-    el("[data-call]").href = "tel:" + CONTACT.phone;
-    el("[data-mail]").href = "mailto:" + CONTACT.email + "?subject=" + encodeURIComponent("Enquiry: " + name) + "&body=" + encodeURIComponent(msg);
   }
   function open(i, from) {
     opener = from || null; fill(i);
